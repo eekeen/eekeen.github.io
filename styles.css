@@ -321,6 +321,40 @@ dialog.lightbox::backdrop { background: rgb(0 0 0 / .84); }
   .row:hover .thumb-card img { transform:none; }
 }
 
+/* V10: name-first engineering portfolio hero. */
+.hero .hero-eyebrow {
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 6px 10px;
+  border: 1px solid var(--ink);
+  background: var(--card);
+  font: 500 .72rem/1.4 var(--mono);
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  font-size: clamp(2.7rem, 6.1vw, 4.65rem);
+  line-height: 1.03;
+  letter-spacing: -.04em;
+  max-width: none;
+  margin: 0 0 10px;
+  white-space: nowrap;
+}
+.hero-name-dot { color: var(--signal); }
+.hero .hero-role {
+  max-width: 45ch;
+  margin: 0 0 20px;
+  color: var(--ink);
+  font: 500 clamp(1.06rem, 1.65vw, 1.25rem)/1.45 var(--sans);
+  letter-spacing: -.012em;
+}
+.hero .hero-role .sep { color: var(--signal); margin: 0 .15em; }
+.hero .lead { font-size: 1.02rem; line-height: 1.63; margin-bottom: 20px; }
+@media (max-width: 420px) {
+  .hero .hero-eyebrow { font-size: .66rem; letter-spacing: .025em; }
+  .hero h1 { font-size: clamp(2.4rem, 11.5vw, 3.1rem); }
+}
+
 /* V9: recruiter-friendly actions directly in the hero. */
 .hero-actions { gap: 12px 19px; align-items: center; }
 .btn-secondary { background: var(--card); color: var(--ink); border: 1px solid var(--ink); padding: 11px 19px; }
