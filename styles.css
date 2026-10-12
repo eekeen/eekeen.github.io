@@ -17,6 +17,15 @@ a { color: inherit; }
 .bar, main, .foot { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
 .bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding: 18px 0; border-bottom: 2px solid var(--ink); }
 .name { font-weight: 600; text-decoration: none; }
+.portfolio-brand {
+  font: 500 clamp(.76rem, 1.2vw, .88rem)/1.4 var(--mono);
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  text-wrap: balance;
+  max-width: 100%;
+}
+.portfolio-brand:hover { color: var(--signal); }
+
 .bar nav { display: flex; gap: 22px; flex-wrap: wrap; }
 .bar nav a { text-decoration: none; color: var(--muted); }
 .bar nav a:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--signal); text-underline-offset: 6px; }
@@ -322,16 +331,6 @@ dialog.lightbox::backdrop { background: rgb(0 0 0 / .84); }
 }
 
 /* V10: name-first engineering portfolio hero. */
-.hero .hero-eyebrow {
-  display: inline-block;
-  margin: 0 0 15px;
-  padding: 6px 10px;
-  border: 1px solid var(--ink);
-  background: var(--card);
-  font: 500 .72rem/1.4 var(--mono);
-  letter-spacing: .055em;
-  text-transform: uppercase;
-}
 .hero h1 {
   font-size: clamp(2.7rem, 6.1vw, 4.65rem);
   line-height: 1.03;
@@ -351,7 +350,6 @@ dialog.lightbox::backdrop { background: rgb(0 0 0 / .84); }
 .hero .hero-role .sep { color: var(--signal); margin: 0 .15em; }
 .hero .lead { font-size: 1.02rem; line-height: 1.63; margin-bottom: 20px; }
 @media (max-width: 420px) {
-  .hero .hero-eyebrow { font-size: .66rem; letter-spacing: .025em; }
   .hero h1 { font-size: clamp(2.4rem, 11.5vw, 3.1rem); }
 }
 
