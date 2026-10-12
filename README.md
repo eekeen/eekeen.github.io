@@ -1,4 +1,4 @@
-# Engineering portfolio — Mattias Eek (v9)
+# Engineering portfolio — Mattias Eek
 
 A static, responsive engineering portfolio with 10 projects, project case studies,
 image galleries, 6 PDF academic reports, a downloadable CV, and contact links.
