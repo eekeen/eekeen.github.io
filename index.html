@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#eef1ec" />
+<title>Mattias Eek – Robotics & Embedded Systems Engineer</title>
+<meta name="description" content="Mattias Eek, M.Sc. in Engineering, Robotics. Control systems, embedded software and hardware integration, with measured results." />
+<meta property="og:title" content="Mattias Eek – Robotics Engineer" />
+<meta property="og:description" content="Projects in control systems, autonomous vehicles and embedded software." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="name" href="#top">Mattias Eek</a>
+  <nav aria-label="Primary">
+    <a href="#projects">Projects</a><a href="#about">About</a><a href="#toolbox">Toolbox</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <h1>I build robots and measure whether they work.</h1>
+      <p class="lead">M.Sc. in Engineering, Robotics (Mälardalen University, 2026). Control systems, embedded software and hardware integration, from LiDAR stabilisation simulations to a 49 kg off-road research robot.</p>
+      <div class="hero-chips" aria-label="Focus areas"><span>Robotics</span><span>Embedded systems</span><span>Control</span><span>Software</span><span>Hardware &amp; CAD</span><span>Electronics</span></div>
+      <p class="links hero-actions"><a class="btn" href="#projects">See the projects</a> <a class="btn btn-secondary" href="assets/Mattias_Eek_CV.pdf" download="Mattias_Eek_CV.pdf">Download CV ↓</a> <a class="plain" href="#contact">Get in touch</a></p>
+    </div>
+    <figure class="hero-photo">
+      <img src="assets/ugv-snow-hero.jpg" alt="A four-wheel-drive unmanned ground vehicle navigating snowy forest terrain" fetchpriority="high" width="954" height="531" />
+      <figcaption><b>Fig. 1</b> Unmanned Ground Vehicle · Off-road field testing</figcaption>
+    </figure>
+  </section>
+
+  <section id="featured" aria-labelledby="f-h">
+    <h2 id="f-h">Selected projects</h2>
+    <div class="featured-grid" id="featured-grid"></div>
+  </section>
+
+  <section id="projects" aria-labelledby="p-h">
+    <h2 id="p-h">All projects</h2>
+    <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+    <ol class="ledger" id="ledger"></ol>
+  </section>
+
+  <section id="about" aria-labelledby="a-h">
+    <h2 id="a-h">About</h2>
+    <div class="cols">
+      <p class="big">I like understanding how things work, then building something better.</p>
+      <div>
+        <p>My background is robotics, where mechanics, electronics, control and software have to work together. I enjoy the overlap: going from models and CAD to hardware, debugging communication, and checking whether a system performs as intended.</p>
+        <p>My projects span UGV motor control over CAN, LiDAR stabilisation, electronics and PCB design, Bluetooth localisation and C++ software. I care about practical results, clear documentation and learning fast when something fails the first time.</p>
+        <p><a class="plain" id="cv-link" href="#contact" hidden>Download my CV</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="toolbox" aria-labelledby="t-h">
+    <h2 id="t-h">Toolbox</h2>
+    <dl class="tools">
+      <div><dt>Programming &amp; software</dt><dd class="skill-chips"><span>C</span><span>C++</span><span>Python</span><span>PyTorch</span><span>Git</span><span>Linux</span><span>Testing</span><span>Profiling</span></dd></div>
+      <div><dt>Robotics &amp; autonomy</dt><dd class="skill-chips"><span>ROS 2</span><span>Gazebo</span><span>Navigation</span><span>PPO</span><span>LiDAR</span><span>IMUs</span><span>Bluetooth localisation</span></dd></div>
+      <div><dt>Control &amp; modelling</dt><dd class="skill-chips"><span>MATLAB</span><span>Simulink</span><span>Simscape Multibody</span><span>PID control</span><span>System identification</span><span>Signal processing</span></dd></div>
+      <div><dt>Hardware &amp; CAD</dt><dd class="skill-chips"><span>SolidWorks</span><span>Onshape</span><span>Mechanical design</span><span>Sensor integration</span><span>Motor control</span></dd></div>
+      <div><dt>Electronics &amp; integration</dt><dd class="skill-chips"><span>CAN bus</span><span>Embedded systems</span><span>PCB design</span><span>H-bridge drivers</span><span>LabVIEW</span><span>Multisim</span><span>Ultiboard</span></dd></div>
+    </dl>
+  </section>
+
+  <section id="contact" aria-labelledby="c-h">
+    <h2 id="c-h">Contact</h2>
+    <p class="contact-headline"><strong>Looking for roles in robotics, embedded systems, hardware engineering, electronics or software.</strong><strong>Västerås, Sweden.</strong></p>
+    <div class="links" id="contact-actions"></div>
+  </section>
+</main>
+<footer class="foot">© <span id="year">2026</span> Mattias Eek</footer>
+<dialog id="dlg" class="project-dialog" aria-labelledby="dlg-title"><div id="dlg-body"></div><button type="button" class="x" id="dlg-x" aria-label="Close project details">Close</button></dialog>
+<dialog id="lightbox" class="lightbox" aria-labelledby="lightbox-caption">
+  <div class="lightbox-frame">
+    <div class="lightbox-top"><span id="lightbox-count" class="lightbox-count"></span><button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close enlarged image">Close ×</button></div>
+    <img id="lightbox-photo" alt="" />
+    <div class="lightbox-bottom"><button type="button" id="lightbox-prev" aria-label="Previous image">← Previous</button><p id="lightbox-caption"></p><button type="button" id="lightbox-next" aria-label="Next image">Next →</button></div>
+  </div>
+</dialog>
+</body>
+</html>
