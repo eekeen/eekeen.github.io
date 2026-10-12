@@ -107,7 +107,7 @@ const PROJECTS = [
     "title": "ChessAI · C++ Chess Engine",
     "type": "Independent software project",
     "year": "2026",
-    "status": "In progress",
+    "status": "Completed",
     "categories": [
       "Software"
     ],
